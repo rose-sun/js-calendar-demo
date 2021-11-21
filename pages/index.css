@@ -1,0 +1,89 @@
+.siteHeader {
+  padding: 6px 16px;
+}
+.siteHeader > h1 {
+  font-size: 34px;
+}
+
+/* 没有class的要用大于号 */
+.calendar {
+  background: white;
+  margin: 16px;
+  border-radius: 24px;
+  color: #333;
+  margin-top: 32px;
+}
+.calendar-header {
+  font-size: 18px;
+  text-align: center;
+  padding: 16px 0;
+}
+
+.calendar-weekdays {
+  display: flex;
+}
+.calendar-weekdays > li {
+  width: 14.2857%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+}
+.calendar-days {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calendar-days > li {
+  width: 14.2857%;
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+  position: relative;
+}
+.calendar-days-today {
+  background: #fed32c;
+  border-radius: 9px;
+}
+
+.calendar-days-selected {
+  outline: 1px solid #fed32c;
+  border-radius: 9px;
+}
+
+.calendar-days > li.calendar-days-disabled {
+  color: #999;
+}
+
+.calendar-days > li.calendar-days-hasEvents::after {
+  content: "";
+  background: green;
+  position: absolute;
+  top: 8px;
+  right: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.calendar-actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.calendar-actions button {
+  font-size: 12px;
+  height: 24px;
+  padding: 0 8px;
+}
+
+.calendar-actions-right {
+  display: flex;
+}
+
+.events-wrapper{
+    padding: 0 16px 16px 16px;
+}
+
+.events-item{
+    padding: 2px 0;
+}
